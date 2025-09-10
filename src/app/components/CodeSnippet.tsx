@@ -98,7 +98,7 @@ const CodeSnippet = ({
           value={code}
           onChange={(e) => setCode(e.target.value)}
           spellCheck={false}
-          className="h-52 min-h-[200px] w-full resize-y border-0 bg-slate-50 px-4 py-4 font-mono text-[14px] leading-6 text-slate-900 outline-none focus:bg-white focus:ring-0 focus:[box-shadow:inset_0_0_0_2px_#1e40af]"
+          className="h-52 min-h-[380px] w-full resize-y border-0 bg-slate-50 px-4 py-4 font-mono text-[14px] leading-6 text-slate-900 outline-none focus:bg-white focus:ring-0 focus:[box-shadow:inset_0_0_0_2px_#1e40af]"
           onKeyDown={(e) => {
             if (e.ctrlKey && e.key === "Enter") {
               e.preventDefault();

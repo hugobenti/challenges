@@ -1,15 +1,11 @@
 import Image from "next/image";
 import CodeSnippet from "./components/CodeSnippet";
-import { challenge_1 } from "../../challenges/challenge_1";
-import { challenge_4 } from "../../challenges/challenge_4";
+import { challenge_1 } from "./challenge1/challenge1";
+import HeaderNav from "./components/HeaderNav";
 
 export default function Home() {
   return (
-    <div className="mt-24">
-      <CodeSnippet
-        title="Exemplo 1: Manipulando DOM"
-        initialCode={challenge_4}
-      />
+    <div className="">
     </div>
   );
 }
