@@ -17,7 +17,7 @@ function fmt(n: number) { return n.toFixed(15); }
   return (
     <div className="w-full max-w-3xl mx-auto p-6 text-neutral-900">
                   <p className="text-sm font-medium text-slate-800 mb-6">
-Write the code that animates “Zeno's Paradox of Achilles and the Tortoise” on an
+Write the code that animates Zeno s Paradox of Achilles and the Tortoise on an
 interface(we would like to see the paradox demonstrated).
       </p>
       {/* Simple controls */}
@@ -80,7 +80,7 @@ interface(we would like to see the paradox demonstrated).
           <p className="text-sm text-neutral-600">Click <span className="font-medium">Play step</span> to start the demonstration.</p>
         )}
         <p className="mt-2 text-xs text-neutral-500">
-          Distances are normalized to the track length (0 to 1). Each step, Achilles reaches the tortoise's previous position;
+          Distances are normalized to the track length (0 to 1). Each step, Achilles reaches the tortoise previous position;
           the gap shrinks geometrically. High precision decimals (15 places) show it never reaches exactly.
         </p>
       </div>
