@@ -2,7 +2,11 @@
 
 export default function Challenge3() {
   return (
-     <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white p-6">
+      <p className="text-sm font-medium text-slate-800 mb-6">
+        Write the necessary React code for generating the below figure (using
+        flex).
+      </p>
       <div className="mx-auto max-w-3xl p-4 space-y-3">
         {/* Header */}
         <header className="h-14 rounded bg-cyan-400 text-white flex items-center justify-center font-semibold">

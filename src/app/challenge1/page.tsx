@@ -6,6 +6,7 @@ import { challenge_1 } from "./challenge1";
 export default function Challenge1() {
   return (
     <div className="min-h-screen bg-white p-6">
+      <p className="text-sm font-medium text-slate-800 mb-6">Write a javascript function that finds the duplicate items in any given array.</p>
       <CodeSnippet
         title="Challenge 1:"
         initialCode={challenge_1}

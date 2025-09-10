@@ -29,8 +29,8 @@ const testCases = [
   '([)]'
 ];
 
-const resposta = document.getElementById('response');
-resposta.innerHTML = \`
+const response = document.getElementById('response');
+response.innerHTML = \`
   <div style="font-family: monospace; padding: 15px; background: #f8f9fa; border-radius: 8px;">
     \${testCases.map(test => \`
       <p>
