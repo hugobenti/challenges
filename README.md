@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Challenge – React + Next.js + Tailwind CSS
+
+A small Next.js app built with React and Tailwind CSS.  
+This repo contains the implementation of **7 challenges** (`/challenge_1` … `/challenge_7`).
+
+## Tech Stack
+- **Next.js 15.5.2** (App Router, Turbopack in dev/build)
+- **React 19.1.0**
+- **Tailwind CSS 4**
+- **TypeScript 5**
+- **ESLint 9**
+
+## Prerequisites
+- **Node.js 18.18+** (recommended 20+)
+- **npm** (or pnpm/yarn if you prefer—commands below assume npm)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# 1) Install dependencies
+npm install
+
+# 2) Run the dev server (Turbopack)
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Available Routes
+- `/challenge_1`
+- `/challenge_2`
+- `/challenge_3`
+- `/challenge_4`
+- `/challenge_5`
+- `/challenge_6`
+- `/challenge_7`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+(There’s also the root page if provided.)
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Development (Next.js with Turbopack)
+npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Lint
+npm run lint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Production build (Turbopack)
+npm run build
 
-## Deploy on Vercel
+# Start production server (after build)
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notes
+- This project uses **Turbopack** for both `dev` and `build` (faster HMR and builds).
+- Tailwind CSS **v4** is enabled; utility classes are available out of the box.
+- Type definitions for React/Node are included for a smooth TS experience.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Troubleshooting
+- If port `3000` is busy, set `PORT=3001` (or another port) before `npm run dev`.
+- Ensure your Node version matches the prerequisite (Next 15 + React 19 require Node 18.18+).
+
+---
+
+Feel free to open an issue or PR if you spot anything to improve.

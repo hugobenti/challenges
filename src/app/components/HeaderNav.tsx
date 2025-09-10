@@ -43,6 +43,19 @@ export default function HeaderNav() {
 
         {/* Desktop nav */}
         <nav className="hidden gap-1 md:flex">
+          <Link
+            href={"/"}
+            onClick={() => setOpen(false)}
+            aria-current={pathname === "/" ? "page" : undefined}
+            className={
+              "rounded-lg px-3 py-2 text-sm font-medium transition " +
+              (pathname === "/"
+                ? "bg-gray-900 text-white shadow"
+                : "text-gray-700 hover:bg-gray-100")
+            }
+          >
+            About{" "}
+          </Link>
           {challenges.map((n) => {
             const href = `/challenge${n}`;
             const active = isActive(pathname ?? "/", href);
@@ -69,6 +82,19 @@ export default function HeaderNav() {
       {open && (
         <div className="border-t border-gray-200 md:hidden">
           <nav className="mx-auto grid max-w-7xl grid-cols-2 gap-2 px-4 py-3 sm:grid-cols-3">
+            <Link
+              href={"/"}
+              onClick={() => setOpen(false)}
+              aria-current={pathname === "/" ? "page" : undefined}
+              className={
+                "rounded-lg px-3 py-2 text-sm font-medium transition " +
+                (pathname === "/"
+                  ? "bg-gray-900 text-white shadow"
+                  : "text-gray-700 hover:bg-gray-100")
+              }
+            >
+              About{" "}
+            </Link>
             {challenges.map((n) => {
               const href = `/challenge${n}`;
               const active = isActive(pathname ?? "/", href);
