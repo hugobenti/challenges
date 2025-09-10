@@ -19,7 +19,6 @@ export default function HeaderNav() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
         {/* Brand */}
         <Link href="/" className="font-semibold tracking-tight">
-          <span className="text-gray-900">My</span>
           <span className="text-gray-500">Challenges - JS</span>
         </Link>
 
