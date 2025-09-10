@@ -3,6 +3,9 @@
 A small Next.js app built with React and Tailwind CSS.  
 This repo contains the implementation of **7 challenges** (`/challenge_1` … `/challenge_7`).
 
+## Live Demo
+👉 [Access the deployed project on Vercel](https://challenges-lfrf1d56j-hugo-bentivegnas-projects.vercel.app/)
+
 ## Tech Stack
 - **Next.js 15.5.2** (App Router, Turbopack in dev/build)
 - **React 19.1.0**
@@ -27,13 +30,13 @@ npm run dev
 Open http://localhost:3000 in your browser.
 
 ### Available Routes
-- `/challenge_1`
-- `/challenge_2`
-- `/challenge_3`
-- `/challenge_4`
-- `/challenge_5`
-- `/challenge_6`
-- `/challenge_7`
+- `/challenge1`
+- `/challenge2`
+- `/challenge3`
+- `/challenge4`
+- `/challenge5`
+- `/challenge6`
+- `/challenge7`
 
 (There’s also the root page if provided.)
 
@@ -52,6 +55,7 @@ npm run build
 # Start production server (after build)
 npm start
 ```
+
 
 ## Notes
 - This project uses **Turbopack** for both `dev` and `build` (faster HMR and builds).
